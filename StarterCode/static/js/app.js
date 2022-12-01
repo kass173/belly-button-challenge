@@ -110,4 +110,3 @@ function init(){
   }
   
   init();
-Footer

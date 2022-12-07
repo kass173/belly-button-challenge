@@ -16,3 +16,9 @@ the init function uses the update function to instantiate the page in the first 
 
 
 ![Dashboard](Images/dashboard_part2.png)
+
+and upon completion i deployed my dashboard online using github pages
+
+https://kass173.github.io/belly-button-challenge/StarterCode/index.html
+
+

@@ -64,51 +64,7 @@ function optionChanged(testSubject) {
         d3.select('#sample-metadata').html(metaText);
 
 
-        //i couldnt create the other chart but created a new pie chart
-
-        //find the total number of microbes
-        var microbeTotal = 0;
-
-        for (let i = 0; i < data2.samples[subjectNumb].sample_values.length; i++) {
-            microbeTotal = microbeTotal + data2.samples[subjectNumb].sample_values[i]
-        }
-
-        var microbeTotalTop10 = 0;
-
-        for (let i = 0; i < newValues.length; i++) {
-            microbeTotalTop10 = microbeTotalTop10 + newValues[i]
-        };
-
-        console.log(microbeTotal);
-        console.log(microbeTotalTop10);
-        //create a final 'other' dummy microbe and append it to the top ten
-        newValues.push(microbeTotal - microbeTotalTop10);
-        newLabels.push("other")
-
-        console.log("pieValues: " + newValues.length + ", pielabels: " + newLabels.length)
-
-        // Trace for the Data
-        let trace1 = {
-            type: "pie",
-            values: newValues,
-            labels: newLabels,
-            textinfo: "label+percent",
-            textposition: "outside",
-            automargin: false
-        };
-
-        // Data trace array
-        traceData = [trace1];
-
-        // Apply title to the layout
-        layout = {
-            height: "600px",
-            title: "Belly Button Washing Frequency.",
-            showlegend: false
-        };
-        // Render the plot to the div tag with id "plot"
-        Plotly.newPlot("pie", traceData, layout);
-
+        
 
         //new bubble chart
 
@@ -130,7 +86,7 @@ function optionChanged(testSubject) {
         };
         data = [trace3];
         layout = {
-            title: 'Diversity of Ompholosian Fauna',
+            title: 'to be added',
             showlegend: false,
             height: 500,
             width: 1300

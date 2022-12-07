@@ -2,6 +2,8 @@
 
 https://kass173.github.io/belly-button-challenge/StarterCode/index.html
 
+![bacteria](images/bacteria.jpg)
+
 This project assignment was to build an interactive dashboard to explore the Belly Button Biodiversity dataset Links to an external site., which catalogs the microbes that colonize human navels.
 
 This project reads an external Json file, and creates two functions: an update, an an init, then calls the init function.
